@@ -1,0 +1,44 @@
+//div[.='APPLE iPhone 15 (Black, 128 GB)']/ancestor::div[@class='_2kHMtA']/descendant::div[@class='_30jeq3 _1_WHN1']
+
+//span[.='Apple iPhone 13 (128GB) - (Product) RED']/ancestor::div[@class='puisg-col-inner']/descendant::span[@class='a-price-whole']
+
+
+//span[.='Apple iPhone 13 (128GB) - Midnight']/ancestor::h2/preceding-sibling::div[@class='a-row a-spacing-micro']/ancestor::div[@class='puisg-col-inner']/descendant::span[@class='a-price-whole']
+
+
+//span[.='Samsung']/preceding-sibling::div[@class='a-checkbox a-checkbox-fancy s-navigation-checkbox aok-float-left']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1) //span[.='realme narzo N53 (Feather Black, 8GB+128GB) 33W Segment Fastest Charging | Slimmest Phone in Segment | 90 Hz Smooth Display']/ancestor::div[@class='puisg-col-inner']/descendant::span[@class='a-price-whole']
+
+2) //span[.='Android 13.0']/preceding-sibling::div[@class='a-checkbox a-checkbox-fancy s-navigation-checkbox aok-float-left']
+
+3) //a[text()=' Kusal Mendis (c & wk) ']/../../div[3]
+
+4) //span[contains(.,'Warner')]/ancestor::div[@class='si-table-row']/descendant::div[@class='si-table-data si-points']
+
+5) //a[.='Store Locator']/..//div[@class='StoreImageGroup--193geoa hmhWqZ']/a[2]

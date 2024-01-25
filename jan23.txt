@@ -1,0 +1,125 @@
+public void maximizeWindow(WebDriver driver)
+{
+driver.manage().window().maximize();
+}
+
+public void waitForPageload(WebDriver driver,int a)
+{
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(a));
+}
+ 
+public void waitForElement(WebDriver driver,WebElement ele,int a)
+{
+WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(a));   //not passed parameters
+wait.until(ExpectedConditions.visibilityOf(ele));
+}
+
+public void select(WebElement ele,String text)
+{
+Select s=new Select(ele);
+s.selectByVisibleText(text);
+}
+
+public void select(WebElement ele,int index)
+{
+Select s=new Select(ele);
+s.selectByIndex(index);
+}
+
+public void select(WebElement ele,String value)
+{
+Select s=new Select(ele);
+s.selectByValue(value);
+}
+
+public void alertAccept(WebDriver driver)
+{
+driver.switchTo().alert().accept();
+}
+
+public void alertDismiss(WebDriver driver)
+{
+driver.switchTo().alert().dismiss();
+}
+
+public void switchToFrameIndex(WebDriver driver,int a)
+{
+driver.switchTo().frame(a);
+}
+
+public void switchToFrameId(WebDriver driver,String id)
+{
+driver.switchTo().frame(id);
+}
+
+public void switchToFrameEle(WebDriver driver,WebElement ele)
+{
+driver.switchTo().frame(ele);
+}
+
+public void mouseHover(WebDriver driver)  
+{
+Actions a=new Actions(driver);
+a.mouseHover();            //perform() menthod not included
+}
+
+public void mouseHover(WebDriver driver,WebElement ele)
+{
+Actions a=new Actions(driver);
+a.mouseHover(ele);          //perform() menthod not included
+}
+
+public void doubleClick((WebDriver driver)
+{
+Actions a=new Actions(driver);
+a.doubleClick();           //perform() menthod not included
+}
+
+public void doubleClick((WebDriver driver,WebElement ele)
+{
+Actions a=new Actions(driver);
+a.doubleClick(ele);        //perform() menthod not included
+}
+
+public void rightClick((WebDriver driver,WebElement ele)
+{
+Actions a=new Actions(driver);
+a.contextClick(ele);       //perform() menthod not included
+}
+
+public void dragDrop((WebDriver driver,WebElement src,WebElement dst)
+{
+Actions a=new Actions(driver);
+a.dragAndDrop(src,dst);    //perform() menthod not included
+}
+
+public void switchToChild((WebDriver driver,String wh)
+{
+driver.switchTo().window(wh);
+}
+
+public void screenShot(Webdriver driver,String s)
+{
+TakesScreenshot ts=(TakesScreenShot) driver;
+String src=ts.getScreenShotAs(OutputType.FILE);
+File dst=new File(".\\screenshot."+s+".png");
+FileUtils.copyFile(src,dsc);
+}
+
+public void openNewTab(Webdriver driver)
+{
+driver.manage().window(new windowType.Tab);    //driver.switchTo().newWindow(WindowType.TAB);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
